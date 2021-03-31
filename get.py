@@ -217,8 +217,7 @@ class AirConditionMonitor:
                         if co2_status != self.co2_status:
                             self.co2_status = co2_status
                     else:
-                        while True:
-                            pass
+                        pass
             except:
                 pass
 
