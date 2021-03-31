@@ -32,7 +32,6 @@ class CCS811:
             raise ValueError('Unexpected mode value {0}.  Set mode to one of CCS811_DRIVE_MODE_IDLE, CCS811_DRIVE_MODE_1SEC, CCS811_DRIVE_MODE_10SEC, CCS811_DRIVE_MODE_60SEC or CCS811_DRIVE_MODE_250MS'.format(mode))
 
         self._address = address
-        self._address_pre = address_pre
         self._bus = smbus.SMBus(1)
         self._decide_address = ""
 
